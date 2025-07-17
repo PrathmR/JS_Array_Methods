@@ -33,3 +33,7 @@ let Grade_A = Array_Grade.find((val) => {
 )
 console.log(Grade_A);
 
+//Write a function to reverse an array
+let Array_Number = [2, 4, 6, 8, 10, 12];
+let ArrayReverse = Array_Number.reverse();
+console.log(ArrayReverse);

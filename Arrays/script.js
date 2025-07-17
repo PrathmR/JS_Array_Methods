@@ -24,3 +24,12 @@ let TotalPayRoll = Array_Sal.reduce((acc, val) => {
     return acc + val;
 }, 0);
 console.log(TotalPayRoll);
+
+//Find the first student with grade A
+let Array_Grade = ['B', 'C', 'Fail', 'A', 'D',];
+let Grade_A = Array_Grade.find((val) => {
+  if (val === 'A') return val;
+}
+)
+console.log(Grade_A);
+

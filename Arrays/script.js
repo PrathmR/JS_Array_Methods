@@ -12,3 +12,15 @@ let even_elements = Array_Integers.filter(function (val) {
 console.log(even_elements);
 
 //Map prices to include GST (18%)
+let Array_Prices = [200, 250, 700, 750, 800];
+let map_prices = Array_Prices.map(function (val) {
+    return val * 0.18;
+})
+console.log(map_prices);
+
+//Reduce salaries to calculate total payroll
+let Array_Sal = [1000, 4500, 25000, 5000];
+let TotalPayRoll = Array_Sal.reduce((acc, val) => {
+    return acc + val;
+}, 0);
+console.log(TotalPayRoll);

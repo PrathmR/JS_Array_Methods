@@ -1,0 +1,11 @@
+const now = 2037;
+const agePrathm= now - 2005;
+const ageSarah = now - 2006;
+console.log(agePrathm, ageSarah);
+console.log(agePrathm, agePrathm/10, 2**3);
+const firstName = 'Prathmesh';
+const lastName = 'Redekar';
+console.log(firstName+' '+lastName);
+let x = 10;
+x+=10;
+console.log(x);

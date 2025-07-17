@@ -37,3 +37,29 @@ console.log(Grade_A);
 let Array_Number = [2, 4, 6, 8, 10, 12];
 let ArrayReverse = Array_Number.reverse();
 console.log(ArrayReverse);
+
+// Sort array of ages in ascending order
+let Array_Ages = [30, 45, 18, 12, 95, 68];
+console.log(Array_Ages.sort(function (a, b) {
+    return a - b; // for descending order use b-a 
+}));
+
+//Destructure first two elements of an array
+let Array_elements = [2, 4, 5, 6, 7, 8, 9, 10, 45];
+let [a, b, c, , d] = Array_elements;
+console.log(d);
+
+//Use some() to check if any student failed
+let Array_Marks = [68, 45, 90, 85, 30, 15];
+let Fail = Array_Marks.some((val) => {
+    return val < 35;
+})
+let Efail = Array_Marks.every((val) => { //checks if all the elements satisfy the condition
+    return val >35 
+})
+console.log(Fail,Efail);
+
+//Use spread to copy and add new item
+let Array_n = [1, 4, 5, 7, 8, 9, 10];
+let ArraySpread = ["India", ...Array_n];
+console.log( ArraySpread );

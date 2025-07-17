@@ -17,7 +17,9 @@ A beginner-friendly project demonstrating core JavaScript array methods using HT
 
 📁 Project Structure
 JS_Array_Methods/ │
+
 ├── index.html # Main webpage with styling and layout
+
 ├── script.js # JavaScript logic demonstrating array methods
 
 🚀 Getting Started

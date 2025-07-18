@@ -40,7 +40,7 @@ Cookies: Understanding how to read, write, and manage small pieces of data sent 
 Feel free to clone or fork this repository to your local machine to run the examples.
 
 # Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/PrathmR/JavaScript.git
 
 # Navigate to the project directory
 cd your-repo-name

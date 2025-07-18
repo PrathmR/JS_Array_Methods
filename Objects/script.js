@@ -27,3 +27,8 @@ let user_obj = {
     },
 }
 console.log(user_obj.Address.City);
+
+// Destructure name and age from a student object
+//Taking Above example of user 
+let { name, Age } = user_obj;
+console.log(name,Age)

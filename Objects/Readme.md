@@ -24,6 +24,7 @@ Focuses entirely on logic, with output visible in the console.
 📁 Project Structure
 
 JS_Objects_Deep_Dive/
+
 │
 
 └── script.js    # All JavaScript logic demonstrating object manipulation

@@ -5,3 +5,9 @@
 
 // Create an object for a book (title, author, price)
  
+let book_obj = {
+    title: 'Origin of species',
+    author: 'Cahrles Darwin',
+    price: 250
+};
+console.log(book_obj);

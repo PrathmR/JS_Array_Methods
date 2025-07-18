@@ -11,3 +11,8 @@ let book_obj = {
     price: 250
 };
 console.log(book_obj);
+
+// Access properties using both dot and bracket
+console.log(book_obj.title);
+console.log(book_obj["author"]);
+

@@ -41,15 +41,21 @@ for (let key in user_obj) {
     console.log(key,user_obj[key]);
 };
 
+
 // Convert object to array using Object.entries()
 console.log(Object.entries(user_obj)); 
+
 
 // Copy an object using spread operator
 let user2_obj = { ...user_obj };
 console.log(user2_obj);
+
 
 // Create a deep copy of an object with nested structure
 let user3_obj = JSON.parse(JSON.stringify(user_obj));
 console.log(user3_obj);
 
 
+// Use optional chaining to safely access deep values
+console.log(user_obj?.Address?.City); // Belgaum
+console.log(user_obj?.profile?.email); // Undefined(no error)

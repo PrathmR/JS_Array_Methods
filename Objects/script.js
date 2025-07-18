@@ -16,3 +16,14 @@ console.log(book_obj);
 console.log(book_obj.title);
 console.log(book_obj["author"]);
 
+// Write a nested object (user with address and location)
+let user_obj = {
+    name: 'Prathmesh',
+    Age: 20,
+    Address: {
+        State: 'Karnataka',
+        City: 'Belgaum',
+        location : 'Honaga'
+    },
+}
+console.log(user_obj.Address.City);

@@ -30,7 +30,7 @@ To run the project locally:
 3. Open Developer Tools (F12) → Console tab to see output
 
 ```bash
-git clone https://github.com/PrathmR/JS_Array_Methods.git
+git clone https://github.com/PrathmR/JavaScript.git
 
 ```
 

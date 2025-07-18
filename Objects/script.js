@@ -3,6 +3,8 @@
  Use destructuring, chaining, and dynamic keys wisely */
 
 
+
+
 // Create an object for a book (title, author, price)
  
 let book_obj = {
@@ -29,6 +31,13 @@ let user_obj = {
 console.log(user_obj.Address.City);
 
 // Destructure name and age from a student object
-//Taking Above example of user 
-let { name, Age } = user_obj;
-console.log(name,Age)
+ 
+let { name, Age } = user_obj; //Taking Above example of user
+console.log(name, Age);
+
+
+// Loop through keys and values of an object
+for (let key in user_obj) {
+    console.log(key,user_obj[key]);
+};
+

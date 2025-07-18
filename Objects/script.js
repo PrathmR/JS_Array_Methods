@@ -59,3 +59,11 @@ console.log(user3_obj);
 // Use optional chaining to safely access deep values
 console.log(user_obj?.Address?.City); // Belgaum
 console.log(user_obj?.profile?.email); // Undefined(no error)
+
+
+//Use a variable as a key using computed properties
+let key = "Designation";
+let company_obj = {
+    [key]: 'CEO'
+};
+console.log(company_obj);

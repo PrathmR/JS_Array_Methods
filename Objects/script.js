@@ -48,4 +48,8 @@ console.log(Object.entries(user_obj));
 let user2_obj = { ...user_obj };
 console.log(user2_obj);
 
-//
+// Create a deep copy of an object with nested structure
+let user3_obj = JSON.parse(JSON.stringify(user_obj));
+console.log(user3_obj);
+
+

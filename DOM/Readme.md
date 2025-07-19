@@ -133,8 +133,6 @@ To run the project locally:
 
 // Question 5.2: Add the class 'highlight' to the <h1> with the ID 'title'.
 
-
-// Question 5.3: Write code so that when the 'action-button' is clicked, the 'text-large' class is toggled on the paragraph with the class 'description'.
 ```
 
 ---

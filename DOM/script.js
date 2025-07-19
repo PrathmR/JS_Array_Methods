@@ -25,6 +25,8 @@ title.innerText = "Welcome to the DOM challenge";
 document.getElementById('status-message').innerHTML="<strong>Ready to strat!</>";
 
 // Question 2.3: Get the text content of the second list item (Item 2) and log it to the console.
+let item2 = document.getElementsByClassName('item')[1];
+console.log(item2);
 
 // ----------------------------------------
 // 3. Attribute Manipulation

@@ -32,24 +32,17 @@ console.log(item2);
 // 3. Attribute Manipulation
 // ----------------------------------------
 // Question 3.1: Get the 'src' attribute of the image with the ID 'image' and log it.
+document.getElementById('image');
+let src = image.getAttribute('src');
+console.log(src);
 
-// Question 3.2: Change the 'src' attribute of the image to 'new_image.png'.
 
-// Question 3.3: Add a 'disabled' attribute to the button with the ID 'action-button'.
-
-// ----------------------------------------
-// 4. Dynamic DOM Manipulation
-// ----------------------------------------
-// Question 4.1: Create a new `<li>` element. Set its text content to "Item 3" and append it to the `<ul>` with the ID 'item-list'.
-
-// Question 4.2: Create a new `<p>` element. Set its text content to "This is a new paragraph." and add it to the *beginning* of the `div` with the ID 'main-container'.
-
-// Question 4.3: Remove the `<li>` with the text "Item 1" from the list.
 
 // ----------------------------------------
 // 5. Style & Class Updates
 // ----------------------------------------
 // Question 5.1: Change the background color of the `div` with the ID 'main-container' to '#f0f0f0'.
+let bg= document
 
 // Question 5.2: Add the class 'highlight' to the `<h1>` with the ID 'title'.
 

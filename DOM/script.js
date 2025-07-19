@@ -36,7 +36,29 @@ document.getElementById('image');
 let src = image.getAttribute('src');
 console.log(src);
 
+// Question 3.2: Change the 'src' attribute of the image to 'new_image.png'.
+document.getElementById("image").setAttribute("src", "new_image.png"); 
 
+// Question 3.3: Add a 'disabled' attribute to the button with the ID 'action-button'.
+let ac = document.getElementById("action-button").setAttribute("disabled", "");
+
+// ----------------------------------------
+// 4. Dynamic DOM Manipulation
+// ----------------------------------------
+// Question 4.1: Create a new `<li>` element. Set its text content to "Item 3" and append it to the `<ul>` with the ID 'item-list'.
+let new_item =  document.createElement('li');
+new_item.innerText = "Item 3";
+document.getElementById('item-list').append(new_item);
+
+
+// Question 4.2: Create a new `<p>` element. Set its text content to "This is a new paragraph." and add it to the *beginning* of the `div` with the ID 'main-container'.
+let par = document.createElement('p');
+par.innerText = "This is a new paragraph";
+document.getElementById("main-container").prepend(par);
+
+// Question 4.3: Remove the `<li>` with the text "Item 1" from the list.
+let rem = document.querySelector('.item');
+rem.remove();
 
 // ----------------------------------------
 // 5. Style & Class Updates

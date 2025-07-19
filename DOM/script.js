@@ -7,6 +7,8 @@ let title = document.querySelector('title');
 console.log(title);
 
 // Question 1.2: Select all elements with the class 'item' and log them to the console.
+let item = document.getElementsByClassName('item');
+console.log(item);
 
 // Question 1.3: Select the first element with the class 'description' using a query selector and log it.
 

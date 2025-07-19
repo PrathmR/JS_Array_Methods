@@ -3,21 +3,26 @@
 // ----------------------------------------
 // Question 1.1: Select the element with the ID 'title' and log it to the console.
 
-let title = document.querySelector('title');
+let title = document.getElementById("title");
 console.log(title);
 
 // Question 1.2: Select all elements with the class 'item' and log them to the console.
-let item = document.getElementsByClassName('item');
+let item = document.getElementsByClassName("item");
 console.log(item);
 
 // Question 1.3: Select the first element with the class 'description' using a query selector and log it.
+let desc = document.querySelector(".description");
+console.log(desc);
 
 // ----------------------------------------
 // 2. Text/Content Access
 // ----------------------------------------
-// Question 2.1: Change the text of the `<h1>` with the ID 'title' to "Welcome to the DOM Challenge!".
+// Question 2.1: Change the text of the `<h1>` with the ID 'title' to "Welcome to the DOM Challenge!"
+document.getElementById("title");
+title.innerText = "Welcome to the DOM challenge";
 
 // Question 2.2: Change the HTML inside the `div` with the ID 'status-message' to "<strong>Ready to start!</strong>".
+document.getElementById('status-message').innerHTML="<strong>Ready to strat!</>";
 
 // Question 2.3: Get the text content of the second list item (Item 2) and log it to the console.
 

@@ -64,8 +64,10 @@ rem.remove();
 // 5. Style & Class Updates
 // ----------------------------------------
 // Question 5.1: Change the background color of the `div` with the ID 'main-container' to '#f0f0f0'.
-let bg= document
+let bg = document.getElementById('main-container');
+bg.style.backgroundColor = "#f0f0f0";
 
 // Question 5.2: Add the class 'highlight' to the `<h1>` with the ID 'title'.
+let Add_class = document.querySelector('h1');
+Add_class.classList.add('highlight');
 
-// Question 5.3: Write code so that when the 'action-button' is clicked, the 'text-large' class is toggled on the paragraph with the class 'description'.

@@ -27,3 +27,12 @@ sel.addEventListener('change', function (sel) {
     
 });
 
+//Mouseover event 
+let mouse_event = document.querySelector("#mouse")
+    mouse_event.addEventListener("mouseover", function () {
+    mouse_event.style.backgroundColor = 'blue';
+    });
+//Mouse-out event
+mouse_event.addEventListener("mouseout", function () {
+  mouse_event.style.backgroundColor = "red";
+});

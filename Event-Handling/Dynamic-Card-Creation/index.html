@@ -5,99 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic ID Card Generator</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            box-sizing: border-box;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+    }
 
-        html, body {
-            width: 100%;
-            height: 100%;
-        }
+    html, body {
+        width: 100%;
+        height: 100%;
+    }
 
-        body {
-            background-color: #7a3e3e;
-            color: #fff;
-        }
+    body {
+        background-color: #1a202c; /* Dark Slate */
+        color: #e2e8f0; /* Light Gray Text */
+    }
 
-        #form-container {
-            padding: 30px;
-            text-align: center;
-            background-color: #5c2e2e;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-        }
+    #form-container {
+        padding: 30px;
+        text-align: center;
+        background-color: #2d3748; /* Darker Slate */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
 
-        form input {
-            margin: 5px;
-            padding: 8px;
-            border-radius: 5px;
-            border: none;
-            font-size: 14px;
-        }
+    form input {
+        margin: 5px;
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+        background-color: #4a5568; /* Gray Input */
+        color: #e2e8f0;
+    }
+    
+    form input::placeholder {
+        color: #a0aec0;
+    }
 
-        form input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        
-        form input[type="submit"]:hover {
-            background-color: #45a049;
-        }
+    form input[type="submit"] {
+        background-color: #3182ce; /* Blue */
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    
+    form input[type="submit"]:hover {
+        background-color: #2b6cb0; /* Darker Blue */
+    }
 
-        #card-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-            gap: 20px;
-        }
+    #card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+    }
 
-        .card {
-            width: 250px;
-            background-color: #8e5d5d;
-            border-radius: 10px;
-            padding: 20px;
-            border: 1px solid #9c7d7d;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        }
+    .card {
+        width: 250px;
+        background-color: #2d3748; /* Darker Slate */
+        border-radius: 10px;
+        padding: 20px;
+        border: 1px solid #4a5568;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
 
-        .profile {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin: 0 auto 15px auto; /* Center the profile pic */
-            border: 3px solid #7a3e3e;
-        }
+    .profile {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto 15px auto;
+        border: 3px solid #3182ce; /* Blue Accent */
+    }
 
-        .profile img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
+    .profile img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 
-        .card h3 {
-            margin-bottom: 5px;
-        }
+    .card h3 {
+        margin-bottom: 5px;
+    }
 
-        .card h5 {
-            margin-bottom: 15px;
-            font-weight: normal;
-            color: #e0e0e0;
-        }
+    .card h5 {
+        margin-bottom: 15px;
+        font-weight: normal;
+        color: #a0aec0; /* Lighter Text for Subheading */
+    }
 
-        .card p {
-            font-size: 13px;
-            line-height: 1.4;
-            color: #f0f0f0;
-        }
-    </style>
+    .card p {
+        font-size: 13px;
+        line-height: 1.4;
+        color: #e2e8f0;
+    }
+</style>
 </head>
 <body>
     

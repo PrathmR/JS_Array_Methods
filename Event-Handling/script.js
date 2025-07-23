@@ -39,9 +39,9 @@ mouse_event.addEventListener("mouseout", function () {
 
 //Mouse-move
 //This will supress the trigerring of other body elements.
-// let mouse2 = document.querySelector('#mouse2');
-// window.addEventListener("mousemove", function (h) {
-//     mouse2.style.top = h.clientY + "px";
-//     mouse2.style.left = h.clientX + "px";
-// }
-// );
+let mouse2 = document.querySelector('#mouse2');
+window.addEventListener("mousemove", function (h) {
+    mouse2.style.top = h.clientY + "px";
+    mouse2.style.left = h.clientX + "px";
+}
+);

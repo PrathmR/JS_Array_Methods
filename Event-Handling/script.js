@@ -39,9 +39,22 @@ mouse_event.addEventListener("mouseout", function () {
 
 //Mouse-move
 //To see the effect remove the comment in the body style for position : relative and for the second div in the html file
-// let mouse2 = document.querySelector('#mouse2');
-// window.addEventListener("mousemove", function (h) {
-//     mouse2.style.top = h.clientY + "px";
-//     mouse2.style.left = h.clientX + "px";
-// }
-// );
+let mouse2 = document.querySelector('#mouse2');
+window.addEventListener("mousemove", function (h) {
+    mouse2.style.top = h.clientY + "px";
+    mouse2.style.left = h.clientX + "px";
+}
+);
+
+//Event Bubbling
+let ul = document.querySelector('ul');
+ul.addEventListener('click', function (h) {
+    h.target.style.textDecoration = 'line-through';
+})
+
+// Event bubling using toggle
+let ul2 = document.querySelector('ol');
+ul2.addEventListener('click', function (a) {
+    a.target.classList.toggle('lt')
+
+})

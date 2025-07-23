@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +19,6 @@
         padding: 2rem;
         position: relative;
         /*overflow: hidden;*/
-        
       }
 
       /* Huge Heading */
@@ -113,8 +113,45 @@
         height: 300px;
         background-color: #880088;
       }
-      .lt{
+      .lt {
         text-decoration: line-through;
+      }
+
+      /* --- NEW STYLES ADDED HERE --- */
+
+      /* Styling for both lists inside cards */
+      .card ul,
+      .card ol {
+        list-style-position: inside; /* Aligns markers with text */
+        padding-left: 0; /* Removes default padding */
+        text-align: left; /* Aligns list text to the left */
+        margin-top: 1rem;
+      }
+
+      /* Styling for individual list items */
+      .card li {
+        font-size: 1.1rem;
+        padding: 12px 15px;
+        margin-bottom: 8px;
+        background-color: #f8f9fa;
+        border-left: 4px solid #005f9e; /* Accent border */
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      /* Hover effect for list items */
+      .card li:hover {
+        background-color: #e9ecef;
+        transform: translateX(5px); /* Slight move to the right on hover */
+      }
+
+      /* Style for the strikethrough class 'lt' */
+      .lt {
+        text-decoration: line-through;
+        color: #888;
+        background-color: #f0f0f0 !important; /* Overrides hover for clarity */
+        border-left-color: #e74c3c;
       }
     </style>
   </head>
@@ -144,25 +181,29 @@
     </div>
 
     <div id="mouse"></div>
-    <!--  <div id="mouse2"></div>  Remove the comment to see the the mousemove event -->
-      
-    <!--Using simple style properties  -->
-    <ul>
+    <div class="card">
+      <h2>Event Bubbling (Direct Style)</h2>
+      <p>Click on a fruit to cross it out directly.</p>
+      <ul id="list-direct-style">
         <li>Mango</li>
         <li>Coconut</li>
         <li>Jackfruit</li>
         <li>Apple</li>
         <li>Papaya</li>
-      </ul> 
-    <!--Using toggle with a class lt -->
-    
-    <ol>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Event Bubbling (Class Toggle)</h2>
+      <p>Click on a fruit to toggle the 'lt' class.</p>
+      <ol id="list-class-toggle">
         <li>Mango</li>
         <li>Coconut</li>
         <li>Jackfruit</li>
         <li>Apple</li>
         <li>Papaya</li>
       </ol>
+    </div>
 
     <script src="script.js"></script>
   </body>

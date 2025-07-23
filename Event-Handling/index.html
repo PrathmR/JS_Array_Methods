@@ -3,26 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style></style>
+    <title>JS Event Handling</title>
+    <style>
+      /* Basic Reset & Body Styling */
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        background-color: #b4cae3;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 2rem;
+      }
+
+      /* Huge Heading */
+      h1 {
+        font-size: 4rem;
+        color: #2c3e50;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+
+      /* Card container for each example */
+      .card {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        margin-bottom: 2rem;
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+      }
+
+      /* Form Elements Styling */
+      label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #555;
+        font-size: 1.1rem;
+      }
+
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box; /* Ensures padding doesn't affect width */
+        margin-bottom: 1rem;
+      }
+
+      /* Button Styling */
+      button {
+        background-color: #005f9e;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      button:hover {
+        background-color: #2980b9;
+        transform: translateY(-2px);
+      }
+
+      /* Paragraph & Output Styling */
+      p {
+        color: #4a4a4a;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      #statusText,
+      #choiceText {
+        background-color: #e9ecef;
+        padding: 1rem;
+        border-radius: 6px;
+        margin-top: 1rem;
+        font-weight: 500;
+      }
+
+      #liveText {
+        color: #e74c3c;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
-    <button id="actionBtn">Click Me</button>
-    <p id="statusText">Waiting for action...</p>
+    <h1>Event Handling in JS</h1>
 
-    <label for="username">Type something:</label>
-    <input type="text" id="username" placeholder="Your text here..." />
-    <p>You are typing: <span id="liveText"></span></p>
+    <div class="card">
+      <button id="actionBtn">Click Me</button>
+      <p id="statusText">Waiting for action...</p>
+    </div>
 
-    <label for="colorSelect">Choose a color:</label>
-<select id="colorSelect">
-  <option value="">--Please choose an option--</option>
-  <option value="Red">Red</option>
-  <option value="Green">Green</option>
-  <option value="Blue">Blue</option>
-</select>
+    <div class="card">
+      <label for="username">Type something:</label>
+      <input type="text" id="username" placeholder="Your text here..." />
+      <p>You are typing: <span id="liveText"></span></p>
+    </div>
 
-<p id="choiceText">Your choice will appear here.</p>
+    <div class="card">
+      <label for="colorSelect">Choose a color:</label>
+      <select id="colorSelect">
+        <option value="">--Please choose an option--</option>
+        <option value="Red">Red</option>
+        <option value="Green">Green</option>
+        <option value="Blue">Blue</option>
+      </select>
+      <p id="choiceText">Your choice will appear here.</p>
+    </div>
 
     <script src="script.js"></script>
   </body>

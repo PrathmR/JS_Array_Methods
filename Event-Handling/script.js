@@ -35,7 +35,7 @@ mouse_event.addEventListener("mouseout", function () {
 });
 
 //Mouse-move
-//To see the effect remove the comment in the body style for position : relative and for the second div in the html file and this below code
+//To see the effect remove the comment in the body style for position : relative and for the second div in the html file and un-comment this below code
 // let mouse2 = document.querySelector('#mouse2');
 // window.addEventListener("mousemove", function (h) {
 //     mouse2.style.top = h.clientY + "px";

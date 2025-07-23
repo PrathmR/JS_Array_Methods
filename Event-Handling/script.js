@@ -38,10 +38,10 @@ mouse_event.addEventListener("mouseout", function () {
 });
 
 //Mouse-move
-//To see the effect remove the comment in the html for the second div 
-let mouse2 = document.querySelector('#mouse2');
-window.addEventListener("mousemove", function (h) {
-    mouse2.style.top = h.clientY + "px";
-    mouse2.style.left = h.clientX + "px";
-}
-);
+//To see the effect remove the comment in the body style for position : relative and for the second div in the html file
+// let mouse2 = document.querySelector('#mouse2');
+// window.addEventListener("mousemove", function (h) {
+//     mouse2.style.top = h.clientY + "px";
+//     mouse2.style.left = h.clientX + "px";
+// }
+// );

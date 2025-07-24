@@ -1,19 +1,28 @@
-//Create an setInterval for the downloading progress bar which should end in 5 seconds
+//Create an setInterval for the downloading progress bar which should end in 3 seconds
 let count = 0;
 const progressBarInner = document.getElementById("progress-bar-inner");
 const progressPercentage = document.getElementById("progress-percentage");
-let downloadText = document.querySelector('h1');
+let downloadText = document.querySelector("h1");
 let interval = setInterval(function () {
-    if (count <= 99) {
-        count++
-        progressBarInner.style.width =   count + '%'
-        progressPercentage.textContent = `${count}`
-    }
-    if (count === 100) {
-        progressBarInner.style.backgroundColor = 'green';
-        downloadText.innerText = 'Downloaded!';
-        clearInterval(interval);
+  if (count <= 99) {
+    count++;
+    progressBarInner.style.width = count + "%";
+    progressPercentage.textContent = `${count}`;
+  }
+  if (count === 100) {
+    progressBarInner.style.backgroundColor = "green";
+    downloadText.innerText = "Downloaded!";
+    clearInterval(interval);
+  }
+}, 3000 / 100);
 
-    }
+//Auto hide alert banner in 3 seconds
+
+// let hide = document.querySelector('#hide');
+// let st= setInterval(function () {
+//     alert('Block will removed in 3 seconds');
+//     document.body.remove(hide);
+//     if()
+
     
-}, 5000 / 100);
+// },3000)

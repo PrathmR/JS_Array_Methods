@@ -21,34 +21,49 @@
             color: red;
         }
         #resultmsg{
-            color: red;
+            color: rgb(26, 255, 114);
         }
         form{
             margin-top: 10%;
             min-width: 150px;
             min-height: 200px;
-            padding: 10px;
+            padding: 20px;
             border: 1px solid black;
         }
     </style>
 </head>
 <body>
 
-    <form autocomplete="off">
-        <input  type="text" placeholder="Enter name" id="name">
-        <br>
-        <small id="nameerror"></small>
-        <br>
-        <input type="email" placeholder="Enter email" id="email"><br>
-        <small id="emailerror"></small><br> 
-        <input type="password" placeholder="Enter the password" id="password"><br>
-        <small id="passworderror"></small>
-        <br>
-        <input type="submit"> 
+    <body>
 
-        <small id="resultmsg">
-        </small>
-    </form>
+  <form autocomplete="off" novalidate>
+    <div>
+      <label for="name">Name:</label><br>
+      <input type="text" placeholder="Enter name" id="name">
+      <small id="nameerror"></small>
+    </div>
+    <br>
+
+
+    <div>
+      <label for="email">Email:</label><br>
+      <input type="email" placeholder="Enter email" id="email">
+      <small id="emailerror"></small>
+    </div>
+    <br>
+    
+  
+    <div>
+      <label for="password">Password:</label><br>
+      <input type="password" placeholder="Enter the password" id="password">
+      <small id="passworderror"></small>
+    </div>
+    <br>
+    
+    <input type="submit" value="Sign Up"> 
+
+    <p id="resultmsg"></p>
+  </form>
     <script src="script.js"></script>
 </body>
 </html>

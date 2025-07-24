@@ -14,6 +14,12 @@
         #nameerror{
             color: red;
         }
+        #emailerror{
+            color: red;
+        }
+        #passworderror{
+            color: red;
+        }
         form{
             margin-top: 10%;
             min-width: 150px;
@@ -26,14 +32,12 @@
 <body>
 
     <form autocomplete="off">
-        <input required type="name" placeholder="Enter name" id="name">
+        <input  type="name" placeholder="Enter name" id="name">
         <br>
-        <small hidden id="nameerror">Please enter a valid name</small>
+        <small id="nameerror"></small>
         <br>
-        <input type="email" placeholder="Enter email" id="email"><br>
-        <small hidden ID="emailerror">Please enter a valid email</SMall><br>
+        <input type="email" placeholder="Enter email" id="email"><br><br> 
         <input type="password" placeholder="Enter the password" id="password"><br>
-        <small hidden id="passworderror"></small>
         <br>
         <input type="submit"> 
     </form>

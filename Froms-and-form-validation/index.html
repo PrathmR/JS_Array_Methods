@@ -20,6 +20,9 @@
         #passworderror{
             color: red;
         }
+        #resultmsg{
+            color: red;
+        }
         form{
             margin-top: 10%;
             min-width: 150px;
@@ -32,7 +35,7 @@
 <body>
 
     <form autocomplete="off">
-        <input  type="name" placeholder="Enter name" id="name">
+        <input  type="text" placeholder="Enter name" id="name">
         <br>
         <small id="nameerror"></small>
         <br>
@@ -42,8 +45,10 @@
         <small id="passworderror"></small>
         <br>
         <input type="submit"> 
+
+        <small id="resultmsg">
+        </small>
     </form>
     <script src="script.js"></script>
-    
 </body>
 </html>

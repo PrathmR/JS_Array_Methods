@@ -2,8 +2,8 @@
 let count = 0;
 const progressBarInner = document.getElementById("progress-bar-inner");
 const progressPercentage = document.getElementById("progress-percentage");
-
-setInterval(function () {
+let downloadText = document.querySelector('h1');
+let interval = setInterval(function () {
     if (count <= 99) {
         count++
         progressBarInner.style.width =   count + '%'
@@ -11,6 +11,9 @@ setInterval(function () {
     }
     if (count === 100) {
         progressBarInner.style.backgroundColor = 'green';
+        downloadText.innerText = 'Downloaded!';
+        clearInterval(interval);
+
     }
     
 }, 5000 / 100);

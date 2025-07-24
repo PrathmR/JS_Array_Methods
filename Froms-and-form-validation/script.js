@@ -5,35 +5,44 @@ let form = document.querySelector("form");
 
 form.addEventListener("submit", function (dets) {
   dets.preventDefault();
-  document.querySelector("#nameerror").textContent = "";
-  document.querySelector("#emailerror").style.display = "";
-  document.querySelector("#passworderror").style.display = "";
+
+  document.querySelector("#nameerror").style.display = "none";
+  document.querySelector("#emailerror").style.display = "none";
+  document.querySelector("#passworderror").style.display = "none";
   document.querySelector("#resultmsg").textContent = "";
+
   const nameRegex = /^[A-Za-z\s]{3,}$/;
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const passwordRegex =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-  let nameans = nameRegex.test(nm.value);
-  let emailans = emailRegex.test(email.value);
-  let passaans = passwordRegex.test(password.value);
+
+  const nameans = nameRegex.test(nm.value);
+  const emailans = emailRegex.test(email.value);
+  const passaans = passwordRegex.test(password.value);
 
   let isvalid = true;
+
   if (!nameans) {
-    document.querySelector("#nameerror").textContent = "Enter a valid name";
-    document.querySelector("#nameerror").style.display = "initia";
+    const nameErrorEl = document.querySelector("#nameerror");
+    nameErrorEl.textContent = "Enter a valid name (at least 3 letters).";
+    nameErrorEl.style.display = "block";
     isvalid = false;
   }
+
   if (!emailans) {
-    document.querySelector("#emailerror").style.display = "Enter a valid email";
-    document.querySelector("#emailerror").style.display = "initial";
+    const emailErrorEl = document.querySelector("#emailerror");
+    emailErrorEl.textContent = "Enter a valid email.";
+    emailErrorEl.style.display = "block";
     isvalid = false;
   }
+
   if (!passaans) {
-    document.querySelector("#passworderror").style.display =
-      "Choose a strong password";
-    document.querySelector("#passworderror").style.display = "initial";
+    const passwordErrorEl = document.querySelector("#passworderror");
+    passwordErrorEl.textContent = "Choose a strong password.";
+    passwordErrorEl.style.display = "block";
     isvalid = false;
   }
+
   if (isvalid) {
     document.querySelector("#resultmsg").textContent =
       "Submitted Successfully!!";

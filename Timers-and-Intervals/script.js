@@ -27,5 +27,6 @@ let st = setInterval(function () {
     alertMsg.innerText = `This block will be removed in ${timer} seconds`;
     //document.body.remove(hide);
   }
-   clearInterval(st);
+   
 }, 1000)
+clearInterval(st);

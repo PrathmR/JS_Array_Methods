@@ -17,14 +17,15 @@ let interval = setInterval(function () {
 }, 3000 / 100);
 
 //Auto hide alert banner in 3 seconds
-let timer = 0; 
+let timer = 3; 
 let hide = document.querySelector('#hide');
-let alertMsg =document.querySelector('#alert-msg');
-let st = setTimeout(function () {
-  if (timer <= 2) {
+let alertMsg = document.querySelector("#alert-msg");
+
+let st = setInterval(function () {
+  if (timer => 0) {
     timer++;
-    alertMsg.innerText = `This block will be removed in ${timer}`;
-    document.body.remove(hide);
+    alertMsg.innerText = `This block will be removed in ${timer} seconds`;
+    //document.body.remove(hide);
   }
-  
-}, 3000)
+   clearInterval(st);
+}, 1000)

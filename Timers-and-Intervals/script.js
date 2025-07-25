@@ -18,11 +18,8 @@ let interval = setInterval(function () {
 
 //Auto hide alert banner in 3 seconds
 
-// let hide = document.querySelector('#hide');
-// let st= setInterval(function () {
-//     alert('Block will removed in 3 seconds');
-//     document.body.remove(hide);
-//     if()
-
-    
-// },3000)
+let hide = document.querySelector('#hide');
+let st = setInterval(function () {
+  alert('Block will removed in 3 seconds');
+  document.body.remove(hide);
+}, 3000)

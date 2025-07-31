@@ -15,25 +15,6 @@ A beginner-friendly project demonstrating core JavaScript array methods using HT
 - Animated and clean typography using Google Fonts
 - Code runs instantly in any browser
 
-📁 Project Structure
-JS_Array_Methods/ │
-
-├── index.html # Main webpage with styling and layout
-
-├── script.js # JavaScript logic demonstrating array methods
-
-🚀 Getting Started
-To run the project locally:
-
-1. Clone the repository or download the files
-2. Open `index.html` in any modern browser
-3. Open Developer Tools (F12) → Console tab to see output
-
-```bash
-git clone https://github.com/PrathmR/JavaScript.git
-
-```
-
 🧪 Array Methods Used
 
 - `forEach()` – Print each item from a student list
@@ -48,8 +29,3 @@ git clone https://github.com/PrathmR/JavaScript.git
 - `every()` – Check if all students passed
 - Spread Operator – Copy and extend arrays
 
-📜 License
-This project is open-source and licensed under the [MIT License](LICENSE).
-
-🙌 Contributions
-Contributions are welcome! Feel free to fork the repository and submit pull requests to enhance or extend the demo.

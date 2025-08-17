@@ -30,38 +30,6 @@ Demonstrates how events propagate (bubble) from child to parent elements.
 
 ---
 
-## 📂 Folder Structure
-
-```
-/event-handling-js/
-│
-├── index.html
-
-├── script.js
-
-└── README.md
-```
-
-Each file includes:
-
-* 📄 Minimal HTML setup
-* 💡 JavaScript demonstrating the event
-* 📝 Inline comments for better understanding
-
----
-
-## 🚀 Getting Started
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/PrathmR/JavaScript.git
-   cd Event-Handling
-   ```
-
-2. Open HTML file in your browser to see the event handling in action.
-
----
 
 ## 🧠 Why Learn Event Handling?
 
@@ -69,14 +37,4 @@ Event handling is fundamental in creating dynamic, interactive web pages. Master
 
 ---
 
-## 📬 Contributing
 
-Feel free to contribute by adding new examples, improving explanations, or suggesting better practices!
-
----
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----

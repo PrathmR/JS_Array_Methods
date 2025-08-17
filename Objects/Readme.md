@@ -12,41 +12,6 @@ A beginner-friendly project showcasing the creation, manipulation, and explorati
 
 ---
 
-## ✨ Features
-
-1. ✅ Clear, beginner-friendly examples of object concepts and methods.
-2. 🧱 Demonstrates various object creation and data structuring techniques.
-3. 🚀 Uses modern, real-world JavaScript syntax.
-4. 🌐 Runs in any modern browser without additional setup.
-5. 🔍 Focuses entirely on logic with all output shown in the Developer Console.
-
----
-
-## 📁 Project Structure
-
-```
-JS_Objects/
-
-├── index.html    # Basic HTML file to run the script
-
-└── script.js     # JavaScript logic demonstrating object manipulation
-```
-
----
-
-## 🚀 Getting Started
-
-To run the project locally:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/PrathmR/JavaScript.git
-   ```
-2. Navigate to the `JS_Objects` folder.
-3. Open `index.html` in any modern browser.
-4. Open **Developer Tools** (`F12` or `Ctrl+Shift+I`) and switch to the **Console** tab to view the output.
-
----
 
 ## 🧪 Object Concepts & Methods Covered
 
@@ -67,13 +32,4 @@ To run the project locally:
 
 ---
 
-## 📜 License
 
-This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).
-
----
-
-## 🙌 Contributions
-
-Contributions are welcome!  
-Feel free to **fork** the repository and submit **pull requests** to improve or extend the examples.

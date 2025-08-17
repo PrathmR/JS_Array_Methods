@@ -20,36 +20,7 @@ A beginner-friendly project demonstrating essential JavaScript DOM manipulation 
 * ✅ Modern, responsive design with a clean UI
 * ✅ Interactive buttons triggering DOM events
 * ✅ No setup required – runs in any modern browser
-
----
-
-## 📁 Project Structure
-
-```
-JS_DOM_Showcase/
-
-│
-├── index.html   # Main webpage with elements to manipulate
-
-└── script.js    # JavaScript logic for DOM manipulation
-```
-
----
-
-## 🚀 Getting Started
-
-To run the project locally:
-
-1. Clone the repository or [download the files](https://github.com/PrathmR/JavaScript):
-
-   ```bash
-   git clone https://github.com/PrathmR/JavaScript.git
-   ```
-2. Open `index.html` in any modern browser.
-3. Click the buttons and watch the changes happen on the page.
-4. Open **Developer Tools (F12 → Console tab)** to see logged actions.
-
----
+* 
 
 ## 🧪 DOM Methods & Concepts Used
 
@@ -137,15 +108,3 @@ To run the project locally:
 
 ---
 
-## 📜 License
-
-This project is **open-source** and licensed under the [MIT License](LICENSE).
-
----
-
-## 🙌 Contributions
-
-Contributions are welcome!
-Feel free to **fork the repo**, improve the code, or add new features through pull requests.
-
----
